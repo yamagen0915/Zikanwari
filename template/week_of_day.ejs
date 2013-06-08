@@ -1,0 +1,13 @@
+<div class="week_of_day_name">
+	<%= week_of_day_name %>
+</div>
+<ul>
+	<% for(var i = 0;i < subjects.length;i ++) { %>
+		<li>
+			<span class='subject_title'><%= subjects[i].name %></span>
+			<% if(subjects[i].homework != "") { %>
+				<div class='homework'></div>
+			<% } %>
+		</li>
+	<% } %>
+</ul>
