@@ -21,6 +21,7 @@
 
 	//送信ボタンのイベント
 	$(document).on("click","#submit",function(){
+		//timetable_idと入力された値が不正ならアラートを出す。
 		if(timetable_id < 0 || is_incorrect_value()){
 			alert("日付の値が不正です。");
 		}else{
@@ -44,7 +45,6 @@
 				var day = $("#limite_day").val();
 
 				limite = new Date(year, month, day);
-				
 			}
 			subject.limite_date = limite;
 

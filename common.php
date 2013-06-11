@@ -38,7 +38,7 @@
 			SECOND_I => 3,
 			FIRST_I => 4,
 		);
-		return $class_ids[$class_id];
+		return $class_ids[(string)$class_id];
 	}
 
 ?>

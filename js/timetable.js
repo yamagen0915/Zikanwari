@@ -82,8 +82,11 @@ Timetable.API = {
 	postHomework : function(class_id,subject){
 		$.post(
 			this.URL.regist_homework,
-			Timetable.API.get_post_params(class_id,subject),
-			function(data){}
+			Timetable.API.get_post_params(
+				class_id.replace("¥s/g",""),subject),
+			function(data){
+				console.log(data);
+			}
 		);
 	},
 

@@ -12,9 +12,7 @@
 	<script type="text/javascript" src="./libs/less-1.3.3.min.js"></script>
 </head>
 <body>
-	<p style="display:none;" id="class_id">
-		<?php echo $class_id; ?>
-	</p>
+	<p style="display:none;" id="class_id"><?php echo $class_id; ?></p>
 	<div id="header">
 		<ul id="weeks_tab">
 			<li class="week active">月</li>
